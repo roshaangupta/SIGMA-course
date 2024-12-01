@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity & Cascade</title>
     <style>
+        /* The specificity of this selector is 1 */
         h1 {
             color: aqua;
         }
-
-        .yellow {
-            color: yellow;
-        }
-
-        .cred {
-            color: red;
-        }
-
+        /* The specificity of this selector is 10 */
         .cpurple {
             color: purple;
         }
+        /* The specificity of this selector is 10+1 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+        /* The is an example of an attribute selector */
+        [date-x=a]{
+            color: maroon;
+         }
+ /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.harryclass.rohan-class[href]:hover{
+            columns: blueviolet;
+        }
+ 
+         
     </style>
 </head>
 
 <body>
     <div>
-        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
     </div>
 
 </body>

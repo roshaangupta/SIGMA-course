@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            height: 80vh;
+            /* width: 2048px; */
+            width: 80vw;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+
+        }
+        html{
+            font-size: 12px;
+        }
+        .container p{
+            font-size: 2rem;
+        }
+        .mycont2{
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: blueviolet;
+            border: 2px;
+            height: auto;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+    <div class="container">
+        This is a container.
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet similique temporibus maxime, voluptates, ab
+            et ducimus veniam, dolores fugiat iusto inventore molestias earum velit! Ipsa provident dignissimos at quos
+            laborum unde eius commodi, perspiciatis aliquam rerum saepe odio sequi ad doloribus minus sit illo veritatis
+            consequuntur non iste accusamus. Aut possimus quia eum iusto!</p>
+    </div>
+    <div class="mycont2">
+        I am another container.
+    </div>
+</body>
+
+</html>
